@@ -53,6 +53,10 @@ p {
   text-align: center;
 }
 
+.align-right {
+  text-align: right;
+}
+
 nav {
   background: #09519F;
   color: #fff;
@@ -166,6 +170,116 @@ nav .links ul li a {
       grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 1rem;
   padding: 5rem;
+}
+
+.contact {
+  background-image: url("https://source.unsplash.com/featured");
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+  position: relative;
+  padding: 2rem;
+}
+
+.contact .separator {
+  display: block;
+  max-width: 100%;
+  height: 0.5rem;
+  background: #E17A30;
+}
+
+.contact .details {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 1rem;
+  color: #fff;
+  z-index: 1;
+}
+
+.contact .details .direction .title h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.5rem;
+  background: #E17A30;
+}
+
+.contact .details .form .title h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.5rem;
+  background: #E17A30;
+}
+
+.contact .details .form form {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.contact .details .form form input {
+  height: 2rem;
+  border: 2px #fff solid;
+  font-size: 1rem;
+  padding: 0 1rem 0;
+  background: none;
+  color: #fff;
+}
+
+.contact .details .form form textarea {
+  border: 2px #fff solid;
+  font-size: 1rem;
+  font-family: inherit;
+  padding: 0 1rem 0;
+  background: none;
+  color: #fff;
+}
+
+.contact .menu-below {
+  color: #fff;
+  text-align: center;
+}
+
+.contact .menu-below ul {
+  margin: 0;
+  padding: 0;
+}
+
+.contact .menu-below ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 0.5rem;
+}
+
+.contact .menu-below ul li a {
+  text-transform: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+footer {
+  background: #272727;
+  margin: 0;
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0;
+  color: #fff;
+}
+
+footer p a {
+  color: #fff;
+}
+
+.team .member .round {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 
 @media (min-width: 780px) {

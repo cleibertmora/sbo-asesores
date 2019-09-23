@@ -3,6 +3,7 @@ $secondColor: #E17A30;
 $gradientPrimary: linear-gradient(to bottom,  #d8a682 1%,#e17a30 88%); 
 $light: #fff;
 $grey: #F4F4F4;
+$dark: #272727;
 
 html {
     margin: 0;
@@ -58,4 +59,8 @@ p {
 
 .center-align {
     text-align: center;
+}
+
+.align-right {
+    text-align: right;
 }
