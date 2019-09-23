@@ -1,0 +1,61 @@
+$mainColor: #09519F;
+$secondColor: #E17A30;
+$gradientPrimary: linear-gradient(to bottom,  #d8a682 1%,#e17a30 88%); 
+$light: #fff;
+$grey: #F4F4F4;
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-weight: 400;
+}
+
+.btn {
+    display: inline-block;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: .5rem 1.5rem;
+}
+
+.btn-slider {
+    background: $gradientPrimary;
+    color: $light;
+}
+
+.btn-outline-main {
+    color: $mainColor;
+    text-transform: uppercase;
+    border: 2px solid $mainColor;
+
+    &.light {
+        color: $light;
+        border: 2px solid $light;
+    }
+}
+
+// UTILITY CLASSES
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+
+.img-circle {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.center-align {
+    text-align: center;
+}
