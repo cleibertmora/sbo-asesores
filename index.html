@@ -15,7 +15,10 @@
 <body>
     <nav>
         <div class="logo"><img src="assets/images/logo-nav.png" alt=""></div>
-        <div class="toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        <div class="toggle">
+            <label for="touch_menu"><i class="fa fa-bars" aria-hidden="true"></i></label>
+            <input hidden type="checkbox" name="touch_menu" id="touch_menu" checked="false">
+        </div>
         <div class="links">
             <ul>
                 <li><a href="#">Inicio</a></li>
@@ -24,6 +27,14 @@
             </ul>
         </div>
     </nav>
+
+    <div class="nav_mobile" style="">
+        <ul>
+            <li><i class="fa fa-home" aria-hidden="true"></i> <a href="#">Inicio</a></li>
+            <li><i class="fa fa-bookmark" aria-hidden="true"></i> <a href="#">Servicios</a></li>
+            <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="#">Contacto</a></li>
+        </ul>
+    </div>
 
     <section class="slider">
         <div class="content">
@@ -40,7 +51,7 @@
 
     <section class="service">
         <div class="img-service">
-            <img src="https://source.unsplash.com/weekly?work" class="" alt="">
+            <img src="/assets/images/mainpage/worker.jpg" class="" alt="">
         </div>
         <div class="content-service">
             <h1>Salud ocupacional</h1>
@@ -75,12 +86,12 @@
             </p>
         </div>
         <div class="img-service">
-            <img src="https://source.unsplash.com/weekly?person" class="" alt="">
+            <img src="/assets/images/mainpage/trabajador.jpg" class="" alt="">
         </div>
     </section>
     <section class="service">
         <div class="img-service">
-            <img src="https://source.unsplash.com/weekly?movie" class="" alt="">
+            <img src="/assets/images/mainpage/account.jpg" class="" alt="">
         </div>
         <div class="content-service">
             <h1>Salud ocupacional</h1>
@@ -115,25 +126,28 @@
             </p>
         </div>
         <div class="img-service">
-            <img src="https://source.unsplash.com/weekly?desert" class="" alt="">
+            <img src="/assets/images/mainpage/group.jpg" class="" alt="">
         </div>
     </section>
 
-    <section class="team">
-        <div class="member center-align">
-            <img src="https://source.unsplash.com/weekly?team" class="img-circle" alt="">
-            <h3>Dr. Paco Contreras</h3>
-            <p>Gerente General</p>
-        </div>
-        <div class="member center-align">
-            <img src="https://source.unsplash.com/weekly?enviroment" class="img-circle" alt="">
-            <h3>Dr. Paco Contreras</h3>
-            <p>Gerente General</p>
-        </div>
-        <div class="member center-align">
-            <img src="https://source.unsplash.com/weekly?hello" class="img-circle" alt="">
-            <h3>Dr. Paco Contreras</h3>
-            <p>Gerente General</p>
+    <section class="">
+        <h2 class="center-align">Our Team</h2>
+        <div class="team">
+            <div class="member center-align">
+                <img src="assets/images/team/1.jpg" class="img-circle" alt="">
+                <h3>Dr. Paco Contreras</h3>
+                <p>Gerente General</p>
+            </div>
+            <div class="member center-align">
+                <img src="assets/images/team/1.jpg" class="img-circle" alt="">
+                <h3>Dr. Paco Contreras</h3>
+                <p>Gerente General</p>
+            </div>
+            <div class="member center-align">
+                <img src="assets/images/team/1.jpg" class="img-circle" alt="">
+                <h3>Dr. Paco Contreras</h3>
+                <p>Gerente General</p>
+            </div>
         </div>
     </section>
 
@@ -186,9 +200,19 @@
     <footer>
         <p class="center-align">Diseñado por <a href="https:://cleibertmora.com">Cleibert Mora</a></p>
     </footer>
-    <!-- <img src="https://source.unsplash.com/featured" alt="">
-    <img src="https://source.unsplash.com/random" alt="">
-    <img src="https://source.unsplash.com/weekly?work" alt="">
-    <img src="https://source.unsplash.com/weekly?person" alt=""> -->
+
+    <script>
+        var menu_mob   = document.querySelector('#touch_menu');
+        var nav_mobile = document.querySelector('.nav_mobile');
+
+        menu_mob.addEventListener('click', () => {
+            if( menu_mob.checked == true ){
+                nav_mobile.attributes.style.value = 'height: auto';
+            }else{
+                nav_mobile.attributes.style.value = 'height: 0';
+            }
+        });
+    </script>
+
 </body>
 </html>
