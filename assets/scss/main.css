@@ -8,6 +8,7 @@ body {
   background: #fff;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 p {
@@ -79,6 +80,7 @@ nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 nav .toggle i {
@@ -134,6 +136,15 @@ nav .links ul li a {
 .nav_mobile ul {
   width: 100%;
   padding: 0 4rem;
+}
+
+.nav_mobile ul .close-menu {
+  text-align: right;
+}
+
+.nav_mobile ul .close-menu i {
+  cursor: pointer;
+  font-size: 2rem;
 }
 
 .nav_mobile ul li {
@@ -221,7 +232,6 @@ nav .links ul li a {
   background-position: center center;
   background-repeat: none;
   background-size: cover;
-  position: relative;
   padding: 2rem;
 }
 
@@ -239,7 +249,6 @@ nav .links ul li a {
       grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 1rem;
   color: #fff;
-  z-index: 1;
 }
 
 .contact .details .direction .title h2::after {

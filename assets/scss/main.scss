@@ -12,6 +12,7 @@ nav {
     max-height: 5rem;
     position: sticky;
     top: 0;
+    z-index: 100;
 
     .toggle {
         i {
@@ -60,6 +61,15 @@ nav {
     ul {
         width: 100%;
         padding: 0 4rem;
+
+        .close-menu {
+            text-align: right;
+
+            i {
+                cursor: pointer;
+                font-size: 2rem;
+            }
+        }
 
         li {
             list-style: none;
@@ -141,32 +151,8 @@ nav {
     background-position: center center;
     background-repeat: none;
     background-size: cover;
-    position: relative;
     padding: 2rem;
 
-    // &::before {
-    //     content: "";
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     height: 100%;
-    //     width: 100%;
-    //     opacity: 0.5;
-    //     background-color: $mainColor;
-    //     background-size: 100% 100%;
-    //     z-index: 0;
-    // }
-
-    //  .overlay {
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     height: 100%;
-    //     width: 100%;
-    //     opacity: 0.5;
-    //     background-color: $mainColor;
-    //     background-size: 100% 100%;
-    //  }
     .separator {
         display: block;
         max-width: 100%;
@@ -179,7 +165,6 @@ nav {
         grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
         grid-gap: 1rem;
         color: $light;
-        z-index: 1;
 
         .direction {
             .title {
