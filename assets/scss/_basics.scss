@@ -28,6 +28,11 @@ p {
     text-transform: capitalize;
     text-decoration: none;
     padding: .5rem 1.5rem;
+    transition: all 1s;
+
+    &:hover{
+        padding: .5rem 2.5rem;
+    }
 }
 
 .btn-slider {

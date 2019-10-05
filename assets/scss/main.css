@@ -20,6 +20,12 @@ p {
   text-transform: capitalize;
   text-decoration: none;
   padding: .5rem 1.5rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.btn:hover {
+  padding: .5rem 2.5rem;
 }
 
 .btn-slider {
@@ -181,6 +187,15 @@ nav .links ul li a {
 
 .slider .content {
   color: #fff;
+}
+
+.slider .content .white-background {
+  background: rgba(255, 250, 250, 0.5);
+  padding: 1rem 0;
+}
+
+.slider .content.black-text {
+  color: #272727;
 }
 
 .services-title {
