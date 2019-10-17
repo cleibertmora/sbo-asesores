@@ -1,48 +1,155 @@
 @import 'basics.scss';
 
-nav {
+.pre-nav {
     background: $mainColor;
-    color: $light;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2rem;
-    font-size: 2rem;
-    max-height: 5rem;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    margin: 0;
+    padding: 0;
+    text-align: right;
 
-    .toggle {
-        i {
-            cursor: pointer;
-        }
-    }
-
-    .logo {
-        max-width: 40%;
-        img{
-            width: 100%;
-            max-height:4rem;
-            object-fit: contain;
-        }
-    }
-
-    .links {
-        display: none;
+    .datos {
         ul {
             display: flex;
-            list-style: none;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            list-style-type: none;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin-inline-start: 0;
+            margin-inline-end: 0;
+            padding-inline-start: 0;
+            color: $light;
+            font-size: 0.8rem;
+            font-weight: bold;
 
             li {
-                font-size: 1.2rem;
-                margin: 0 2rem;
+                list-style: none;
+                margin: 0;
+                display: inline-block;
+                padding: 1rem;
+
+                i {
+                    color: $secondColor;
+                }
 
                 a {
                     text-transform: none;
                     text-decoration: none;
                     color: $light;
+                }
+            }
+
+            .fav-action{
+                background-color: $secondColor;
+
+                i {
+                    color: $light;
+                }
+            }
+        }
+    }
+}
+
+header{ 
+    position: relative;
+    
+    nav {
+        position: absolute;
+        top: 0;
+        background: rgba(23, 87, 157, 0.2);
+        color: $light;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2rem;
+        font-size: 2rem;
+        max-height: 5rem;
+        z-index: 100;
+        width: 100%;
+        box-sizing: border-box;
+
+        .toggle {
+            i {
+                cursor: pointer;
+            }
+        }
+
+        .logo {
+            max-width: 40%;
+            img{
+                width: 100%;
+                max-height:4rem;
+                object-fit: contain;
+            }
+        }
+
+        .links {
+            display: none;
+            ul {
+                display: flex;
+                list-style: none;
+
+                li {
+                    font-size: 1rem;
+                    margin: 0 2rem;
+
+                    a {
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        text-decoration: none;
+                        color: $light;
+                    }
+                }
+            }
+        }
+    }
+
+    .slider {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-position: center center;
+        background-repeat: none;
+        background-size: cover;
+        height: 40vh;
+        padding: 12rem 2rem 8rem;
+    
+        .content {
+            color: $light;
+    
+            .white-background {
+                background: rgba(255, 250, 250, 0.5);
+                //background: #fff;
+                padding: 1rem 0;
+            }
+    
+            &.black-text {
+                color: $dark;
+            }
+        }
+    }
+
+    .controls {
+        position: absolute;
+        bottom: 2rem;
+        //z-index: 10;
+
+        ul {
+            list-style-type: none;
+            display: flex;
+
+            li{
+                span{
+                    display: inline-block;
+                    border: solid 2px $light;
+                    width: 1rem;
+                    height: 1rem;
+                    margin: 0 0.7rem;
+                    border-radius: 50%;
+                    cursor: pointer;
+
+                    &.selected, &:hover {
+                        background: $light;
+                    }
                 }
             }
         }
@@ -57,6 +164,7 @@ nav {
     background-color: $mainColor;
     height: 0;
     transition: all 1s ease;
+    z-index: 100;
 
     ul {
         width: 100%;
@@ -92,30 +200,7 @@ nav {
     }
 }
 
-.slider {
-    display: grid;
-    grid-template-columns: 1fr;
-    background-image: url('/assets/images/mainpage/showcase.jpg');
-    background-position: center center;
-    background-repeat: none;
-    background-size: cover;
-    max-height: 50vh;
-    padding: 8rem 2rem;
 
-    .content {
-        color: $light;
-
-        .white-background {
-            background: rgba(255, 250, 250, 0.5);
-            //background: #fff;
-            padding: 1rem 0;
-        }
-
-        &.black-text {
-            color: $dark;
-        }
-    }
-}
 
 .services-title {
     padding: 2.5rem;
@@ -273,6 +358,107 @@ footer {
             width: 50%;
             height: auto;
         }
+    }
+}
+
+.contact-whatsapp {
+    text-align: center;
+    background-image: url('/assets/images/mainpage/contact.jpg');
+    background-position: center center;
+    background-repeat: none;
+    background-size: cover;
+    color: $light;
+    padding: 2rem 0.5rem;
+
+    .whatsapp {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: bold;
+
+        img {
+            width: 90px;
+            height: 90px;
+        }
+
+        a {
+            color: $light;
+            font-weight: bold;
+        }
+    }
+}
+
+.form-contact{
+    padding: 2rem;
+    .bio{
+        .logo {
+            text-align: center;
+            img {
+                width: 70%;
+                height: auto;
+            }
+        }
+
+        .social-media {
+            .social-links {
+                list-style-type: none;
+                display: flex;
+
+                li {
+                display: inline-block;
+                width: 35px;
+                height: 35px;
+                border: 3px $dark solid;
+                border-radius: 50%;
+                font-size: 1.5rem;
+                margin: 0 0.5rem;
+                text-align: center;
+                    a {
+                        color: $dark;
+                    }
+                }
+            }
+        }
+    }
+
+    .address{
+        i {
+            color: $mainColor;
+            font-size: 1.5rem;
+        }
+    }
+
+    .contact-form {
+        .contact-title {
+            &::after {
+                content: '';
+                display: block;
+                background: $mainColor;
+                width: 200px;
+                height: 15px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+.about-section {
+    padding: 2rem 0;
+
+    .about {
+        padding: 2rem 1rem 0rem;
+
+        .quote {
+            font-size: 2rem;
+            font-weight: 200;
+            color: $greyHard;
+        }
+    }
+
+    .about-img {
+        display: none;
     }
 }
 

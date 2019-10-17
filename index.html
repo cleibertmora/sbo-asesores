@@ -14,6 +14,18 @@
     <link rel="stylesheet" href="assets/css/main.css"> -->
 </head>
 <body>
+    <div class="pre-nav">
+        <div class="datos">
+            <ul>
+                <li><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;
+                     ECUADOR</li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i>&nbsp; 04-043 3344 | 098 832 8383</li>
+                <li class="fav-action"><a href="#">HÁZ TU EVALUACIÓN AQUÍ</a>&nbsp; <i class="fa fa-angle-right" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+    </div>
+    
+    <header>
     <nav>
         <div class="logo"><img src="assets/images/logo-nav.png" alt=""></div>
         <div class="toggle">
@@ -23,8 +35,8 @@
         <div class="links">
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#contact-section">Contacto</a></li>
+                <li><a href="#about-anchor">Quienés Somos</a></li>
+                <li><a href="#whatsapp-anchor">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -38,22 +50,144 @@
         </ul>
     </div>
 
-    <section class="slider">
+    <section class="slider" style="background-image: url('assets/images/mainpage/showcase.jpg')" data-aos="" name="slider">
         <div class="content">
             <h1 data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Voluptatum, ducimus.</h1>
             <p data-aos="fade-left">Estas en el lugar correcto</p>
-            <div data-aos="fade-up" data-aos-delay="800"><a href="#contact-section" class="btn btn-slider">Portafolio de Servicios</a></div>
+            <!-- <div data-aos="fade-up" data-aos-delay="800"><a href="#contact-section" class="btn btn-slider">Portafolio de Servicios</a></div> -->
         </div>
         <div class="empty"></div>
     </section>
-    <section class="services-title" data-aos="fade-in">
-        <h2>Servicios Profesionales en Distintas Áreas</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pretium facilisis fringilla. Praesent nec tellus eget purus luctus viverra. Pellentesque accumsan enim at risus laoreet consequat.</p>
+
+    <section class="slider" data-aos="" name="slider" style="display:none; background-image: url('assets/images/mainpage/trabajador.jpg')">
+        <div class="content">
+            <h1 data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Voluptatum, ducimus.</h1>
+            <p data-aos="fade-left">Estas en el lugar correcto</p>
+            <!-- <div data-aos="fade-up" data-aos-delay="800"><a href="#contact-section" class="btn btn-slider">Portafolio de Servicios</a></div> -->
+        </div>
+        <div class="empty"></div>
     </section>
 
+    <section class="slider" data-aos="" name="slider" style="display:none; background-image: url('assets/images/mainpage/worker.jpg')">
+        <div class="content">
+            <h1 data-aos="fade-right">Horse with no namet consectetur adipisicing elit. <br> Voluptatum, ducimus.</h1>
+            <p data-aos="fade-left">Estas en el lugar correcto</p>
+            <!-- <div data-aos="fade-up" data-aos-delay="800"><a href="#contact-section" class="btn btn-slider">Portafolio de Servicios</a></div> -->
+        </div>
+        <div class="empty"></div>
+    </section>
+
+    <section class="slider" data-aos="" name="slider" style="display:none; background-image: url('assets/images/mainpage/group.jpg')">
+        <div class="content">
+            <h1 data-aos="fade-right">In the desert you can't consectetur adipisicing elit. <br> Voluptatum, ducimus.</h1>
+            <p data-aos="fade-left">Estas en el lugar correcto</p>
+            <!-- <div data-aos="fade-up" data-aos-delay="800"><a href="#contact-section" class="btn btn-slider">Portafolio de Servicios</a></div> -->
+        </div>
+        <div class="empty"></div>
+    </section>
+
+    <div class="controls">
+        <ul>
+            <li><span name="dot" class="selected"></span></li>
+            <li><span name="dot"></span></li>
+            <li><span name="dot"></span></li>
+            <li><span name="dot"></span></li>
+        </ul>
+    </div>
+
+    </header>
+
+    <div id="about-anchor"></div>
+
+    <section class="about-section" data-aos="fade-in">
+            <div class="about">
+                <span class="quote">Velamos por el bienestar de
+                su empresa</span>
+
+                <h2>Quiénes somos</h2>
+                
+                <p>
+                SBO Group Ecuador, es una compañía especializada en
+                prevención de riesgos en materia de seguridad y salud ocupacional,
+                creada por un equipo multidisciplinario de técnicos y profesionales
+                (Ingenieros, médicos ocupacionales, auditores, contadores y otras
+                especialidades), todos con alta experiencia y especialización para
+                realizar todo tipo de asesoría, supervisión y asistencia a la empresas
+                públicas y privadas del país.
+                Nuestro compromiso es garantizar que nuestros socios comerciales
+                cumplan con todas las leyes, regulaciones y directrices sub-
+                regulatorias aplicables ofreciendo un servicio de alta calidad.
+                </p>
+
+                <h2>Nuestra Misión</h2>
+                <p>
+                Somos una empresa dedicada a la prestación de servicios
+                profesionales que busca satisfacer las necesidades de nuestros
+                clientes, relacionados con la seguridad y salud en el trabajo alineado
+                con la normatividad legal vigente, con soluciones adaptadas a la
+                realidad y a la necesidad de cada empresa.
+                Nuestra Visión
+                Ser reconocidos en el año 2022 a nivel nacional como una empresa
+                dinámica, humana, eficaz y eficiente con un porcentaje de
+                satisfacción de nuestros clientes superior al 90%
+                </p>
+            </div>
+            <div class="about-img">
+                <img src="assets/images/mainpage/about.png" alt="">
+            </div>
+    </section>
+
+    <section class="service color" data-aos="slide-up">
+            <div class="content-service">
+                <h1>ASESORÍA EN SEGURIDAD Y SALUD EN EL TRABAJO</h1>
+                <p>Somos una organización innovadora en la gestión de servicios en salud ocupacional</p>
+                <p>Contamos con ingenieros en seguridad y médicos ocupacionales calificados para implementar un sistema de gestión en
+                        seguridad y salud en el trabajo de acuerdo a la normativa vigente en SST (Acuerdo Ministerial N° 1404) y/o normas
+                        internacionales (OHSAS 18001).
+                        Así como, realizar una Auditoría Externa en SST a empresa que ya cuentan con un SGSST.</p>
+                <p class="center-align">
+                    <a href="#" class="btn btn-outline-main light">saber más</a>
+                </p>
+            </div>
+            <div class="img-service">
+                <img src="assets/images/mainpage/worker.jpg" class="" alt="">
+            </div>
+    </section>
     <section class="service">
         <div class="img-service" data-aos="fade-right">
-            <img src="/assets/images/mainpage/worker.jpg" class="" alt="">
+            <img src="assets/images/mainpage/trabajador.jpg" class="" alt="">
+        </div>
+        <div class="content-service" data-aos="fade-left">
+            <h1>Medicina Preventiva y del Trabajo</h1>
+            <p>Expertos en la implementación de estrategias para la prevención de riesgos y enfermedades laborales.</p>
+            <p>Ofrecemos a las empresas servicios de promoción de la salud y prevención de las enfermedades laborales para
+                    lograr ambientes de trabajo saludables.</p>
+            <p class="center-align">
+                <a href="#" class="btn btn-outline-main">saber más</a>
+            </p>
+        </div>
+    </section>
+    <section class="service color" data-aos="slide-up">
+        <div class="content-service">
+            <h1>SERVICIOS CONTABLES</h1>
+            <p>Asesorías administrativas - financieras. <br/> Asesoría Tributaria.</p>
+            <ul>
+                <li>Asesoramiento Tributario</li>
+                <li>Consultoría Gerencial, Financiera y Administrativa</li>
+                <li>Valuación de Empresas</li>
+                <li>Inscripciones ante organismos de Control Tributario</li>
+            </ul>
+            <p class="center-align">
+                <a href="#" class="btn btn-outline-main light">saber más</a>
+            </p>
+        </div>
+        <div class="img-service">
+            <img src="assets/images/mainpage/account.jpg" class="" alt="">
+        </div>
+    </section>
+    <section class="service">
+        <div class="img-service" data-aos="fade-right">
+            <img src="assets/images/mainpage/group.jpg" class="" alt="">
         </div>
         <div class="content-service" data-aos="fade-left">
             <h1>Salud ocupacional</h1>
@@ -71,68 +205,9 @@
             </p>
         </div>
     </section>
-    <section class="service color" data-aos="slide-up">
-        <div class="content-service">
-            <h1>Salud ocupacional</h1>
-            <p>Expertos en la implementación de estrategias para la prevención de riesgos y enfermedades laborales.</p>
-            <ul>
-                <li>Implementación de programas de gestión de salud ocupacional</li>
-                <li>Charlas de salud ocupacional</li>
-                <li>Programa de prevención de uso y consumo de drogas</li>
-                <li>Programa de prevención de riesgo psicosocial y sus herramientas.</li>
-                <li>Exámenes ocupacionales.</li>
-                <li>Campañas de salud.</li>
-            </ul>
-            <p class="center-align">
-                <a href="#" class="btn btn-outline-main light">saber más</a>
-            </p>
-        </div>
-        <div class="img-service">
-            <img src="/assets/images/mainpage/trabajador.jpg" class="" alt="">
-        </div>
-    </section>
-    <section class="service">
-        <div class="img-service" data-aos="fade-right">
-            <img src="/assets/images/mainpage/account.jpg" class="" alt="">
-        </div>
-        <div class="content-service" data-aos="fade-left">
-            <h1>Salud ocupacional</h1>
-            <p>Expertos en la implementación de estrategias para la prevención de riesgos y enfermedades laborales.</p>
-            <ul>
-                <li>Implementación de programas de gestión de salud ocupacional</li>
-                <li>Charlas de salud ocupacional</li>
-                <li>Programa de prevención de uso y consumo de drogas</li>
-                <li>Programa de prevención de riesgo psicosocial y sus herramientas.</li>
-                <li>Exámenes ocupacionales.</li>
-                <li>Campañas de salud.</li>
-            </ul>
-            <p class="center-align">
-                <a href="#" class="btn btn-outline-main">saber más</a>
-            </p>
-        </div>
-    </section>
-    <section class="service color" data-aos="slide-up">
-        <div class="content-service">
-            <h1>Salud ocupacional</h1>
-            <p>Expertos en la implementación de estrategias para la prevención de riesgos y enfermedades laborales.</p>
-            <ul>
-                <li>Implementación de programas de gestión de salud ocupacional</li>
-                <li>Charlas de salud ocupacional</li>
-                <li>Programa de prevención de uso y consumo de drogas</li>
-                <li>Programa de prevención de riesgo psicosocial y sus herramientas.</li>
-                <li>Exámenes ocupacionales.</li>
-                <li>Campañas de salud.</li>
-            </ul>
-            <p class="center-align">
-                <a href="#" class="btn btn-outline-main light">saber más</a>
-            </p>
-        </div>
-        <div class="img-service">
-            <img src="/assets/images/mainpage/group.jpg" class="" alt="">
-        </div>
-    </section>
+    
 
-    <section class="">
+    <!-- <section class="">
         <h2 class="center-align">Our Team</h2>
         <div class="team">
             <div class="member center-align" data-aos="fade-right">
@@ -151,56 +226,87 @@
                 <p>Gerente General</p>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section id="contact-section" class="contact" data-aos="fade-in">
-        <div class="overlay"></div>
-        <div class="details">
-            <div class="direction">
-                <div class="title">
-                    <h2>¿Donde Operamos?</h2>
-                </div>
-                <div class="content">
-                    <p>Estamos ubicados en: <br/>
+    <div id="whatsapp-anchor"></div>
 
-                    Guayaquil lorem ipsum bibendum gravida ex. <br/>
-                    
-                    Horario: 9:00AM - 5:00PM <br/>
-                    
-                    Información adicional aquí.</p>
-                </div>
+    <div class="contact-whatsapp">
+        <h3>Consultános y se testigo de nuestro servicio.</h3>
+        <div class="whatsapp">
+            <img src="assets/images/logos/whatsapp.png" alt="">
+            <p><a href="#">09855554003</a></p>
+        </div>
+    </div>
+
+    <div class="form-contact" data-aos="slide-up">
+        <div class="bio">
+            <div class="logo">
+                <img src="assets/images/logo-nav.png" alt="">
             </div>
-            <div class="form">
-                <div class="title">
-                    <h2>Contacto <span>+57 1 7027111</span></h2>
-                </div>
-
-                <div class="content">
-                    Para más información, contáctenos por teléfono o llene nuestro formulario: 
-                    <form action="#">
-                        <input type="text" name="nombre" placeholder="Nombre">
-                        <input type="text" name="telefono" placeholder="Teléfono">
-                        <input type="email" name="email" placeholder="E-mail">
-                        <textarea name="message" rows="5" placeholder="Escriba su mensaje aquí"></textarea>
-                        <p class="align-right"><a href="#" class="btn btn-slider">Enviar</a></p>
-                    </form>
-                </div>
+            <div class="bio-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt debitis labore quam itaque eveniet error repellat magnam quis obcaecati eos, sint repellendus molestiae, architecto nam nostrum, voluptas culpa? Esse, porro! <br><br><br><br>
+            </div>
+            <div class="social-media">
+                <p><b>SIGUENÓS EN:</b></p>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a></li>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a></li>
+                </ul>
             </div>
         </div>
-        <div class="separator"></div>
-        <div class="menu-below">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li>|</li>
-                <li><a href="#">Servicios</a></li>
-                <li>|</li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
+
+        <div class="address">
+            <h3>Estamos ubicados</h3>
+            <p>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <b>Carrera 54 #1a-60 Cali - Colombia</b>
+            </p>
+
+            <p>Puedes Llamarnos</p>
+            <p>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <b>04-993 9843 | 098-094 3423</b>
+            </p>
+
+            <p>Atención al cliente</p>
+            <p>
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                <b>Lunes a Viernes</b><br>
+                8AM - 6PM<br>
+                <b>Sabados</b><br>
+                8AM - 12PM <br>
+                Cerrado Domingo y Festivos
+            </p>
+
+            <p>Envianos un mensaje</p>
+            <p>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <b>hola@sbo.com</b>
+            </p>
         </div>
-    </section>
+
+        <div class="contact-form">
+            <h1 class="contact-title">Envianos tus comentarios</h1>
+            <form action="#">
+                <label for="nombre">Tu nombre (*)</label>
+                <input type="text" name="nombre">
+                <label for="nombre">Tu teléfono (*)</label>
+                <input type="text" name="telefono">
+                <label for="nombre">Tu email (*)</label>
+                <input type="email" name="email">
+                <label for="nombre">Tu mensaje (*)</label>
+                <textarea name="message" rows="5"></textarea>
+                <p class="align-right"><a href="#" class="btn btn-slider">Enviar</a></p>
+            </form>
+        </div>
+    </div>
 
     <footer>
-        <p class="center-align">Diseñado por <a href="https:://cleibertmora.com">Cleibert Mora</a></p>
+        <p class="center-align">Diseñado por <a target="_blank" href="https://cleibertmora.com/">Cleibert Mora</a></p>
     </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -227,6 +333,32 @@
         close_nav.addEventListener('click', () => {
             menu_mob.click();
         });
+
+
+        // Slider part
+
+        var dots = document.getElementsByName('dot');
+        var sliders = document.getElementsByName('slider');
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                changeSlide(dot, index);
+            })
+        });
+
+        function changeSlide(dot, index){            
+            dots.forEach(dotE => {
+                dotE.classList = '';
+            })
+
+            sliders.forEach(slide => {
+                slide.style.display = 'none'
+            })
+
+            sliders[index].style.display = 'block'
+        
+            dot.classList = 'selected'
+        }
     </script>
 
 </body>

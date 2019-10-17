@@ -4,6 +4,7 @@ $gradientPrimary: linear-gradient(to bottom,  #d8a682 1%,#e17a30 88%);
 $light: #fff;
 $grey: #F4F4F4;
 $dark: #272727;
+$greyHard: #7d7d7d;
 
 html {
     margin: 0;
@@ -21,6 +22,34 @@ body {
 
 p {
     font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+form {
+    display: grid;
+    grid-gap: 1rem;
+
+    input {
+        height: 2rem;
+        //border: 2px $dark solid;
+        border: none;
+        background: $grey;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        color: $dark;
+    }
+
+    textarea {
+        border: none;
+        font-size: 1rem;
+        font-family: inherit;
+        padding: 0 1rem 0;
+        background: $grey;
+        color: $dark;
+    }
 }
 
 .btn {

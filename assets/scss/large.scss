@@ -4,7 +4,7 @@
             display: none;
         }
         .links {
-            display: block;
+            display: grid !important;
         }
     }
 
@@ -13,6 +13,49 @@
             padding: 0 0 0 1rem;
             h1 {
                 font-size: 2rem;
+            }
+        }
+    }
+
+    .form-contact{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1rem;
+        grid-template-rows: auto;
+        grid-template-areas: 'bio address contactForm contactForm';
+
+        .bio {
+            grid-area: bio;
+        }
+
+        .address {
+            grid-area: address;
+        }
+
+        .contact-form {
+            grid-area: contactForm;
+        }
+    }
+
+    .about-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "about about image";
+
+        .about {
+            grid-area: about; 
+        }
+
+        .about-img {
+            display: block;
+            grid-area: image;
+            width: auto;
+            height: 600px;
+
+            img {
+                width: 100%;
+                height: auto;
             }
         }
     }
